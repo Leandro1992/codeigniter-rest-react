@@ -1,0 +1,29 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-brand{
+
+    .brand {
+        height: 40px;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white !important;
+}
+
+.home-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.margin-menu {
+    margin-top: 40px
+}
