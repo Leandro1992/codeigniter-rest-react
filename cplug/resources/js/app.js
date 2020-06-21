@@ -22,6 +22,7 @@ window.Vue = require('vue');
 Vue.component('welcome-component', require('./components/WelcomeComponent.vue').default);
 Vue.component('store-component', require('./components/store/StoreComponent.vue').default);
 Vue.component('language-switcher', require('./components/LanguageSwitcher.vue').default);
+Vue.component('table-product', require('./components/product/TableComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

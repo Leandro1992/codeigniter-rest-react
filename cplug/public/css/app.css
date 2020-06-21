@@ -10947,3 +10947,20 @@ a.text-dark:focus {
   margin-top: 40px;
 }
 
+.form-stock {
+  display: flex;
+}
+
+.in-line {
+  background-color: aliceblue;
+}
+
+.out-line {
+  background-color: crimson;
+  color: white;
+}
+
+.img-product {
+  width: 100%;
+}
+

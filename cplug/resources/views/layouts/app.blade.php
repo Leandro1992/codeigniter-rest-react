@@ -50,14 +50,19 @@
                                 <a class="nav-link" href="{{ url('/'.app()->getLocale()) }}" >{{ __('Home') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">{{ __('Store') }}</a>
+                                <a class="nav-link" href="{{ url(app()->getLocale()).'/store' }}">{{ __('Store') }}</a>
                             </li>
+                            @if(Auth::user()->roles->pluck('name')->contains('admin') || Auth::user()->roles->pluck('name')->contains('seller')) 
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url(app()->getLocale()).'/product' }}">{{ __('Products') }}</a>
+                            </li>
+                            @endif
                             @if(Auth::user()->roles->pluck('name')->contains('admin')) 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">{{ __('Movement') }}</a>
+                                <a class="nav-link" href="{{ url(app()->getLocale()).'/stock' }}">{{ __('Stock') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">{{ __('Reports') }}</a>
+                                <a class="nav-link" href="{{ url(app()->getLocale()).'/dashboard' }}">{{ __('Dashboard') }}</a>
                             </li>
                             @endif
                             <li class="nav-item dropdown">
@@ -86,7 +91,7 @@
             </div>
             <language-switcher 
                 locale="{{ app()->getLocale() }}"
-                link-pt='pr_br'
+                link-pt='pt_br'
                 link-en="en"
             ></language-switcher>
         </nav>

@@ -147,6 +147,7 @@ ul {
   position: relative;
   height: 100%;
   color:white;
+  width: 75px;
 }
 .dropdown-fade-enter-active,
 .dropdown-fade-leave-active {
