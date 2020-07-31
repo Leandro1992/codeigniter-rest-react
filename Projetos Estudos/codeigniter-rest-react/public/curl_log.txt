@@ -1,0 +1,12 @@
+*   Trying 52.67.232.134:443...
+* Connected to api.pegaki.com.br (52.67.232.134) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* SSL certificate problem: unable to get local issuer certificate
+* Closing connection 0
+*   Trying 52.67.232.134:443...
+* Connected to api.pegaki.com.br (52.67.232.134) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* SSL certificate problem: unable to get local issuer certificate
+* Closing connection 0
