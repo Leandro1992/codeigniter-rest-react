@@ -50,16 +50,12 @@ app.get('/getNearbyData', async (req, res) => {
 		let result = await getToken();
 		token = result.token;
 	}
-	var FormData = require('form-data');
-	var data = new FormData();
-	data.append('client_secret', '83bc3861e96accc0defcae42488f5c632ec296cb335ebe3484a53405a165fd58');
-	data.append('email', 'contato@pegaki.com.br');
 
 	var config = {
 		method: 'get',
 		url: 'https://api.pegaki.com.br/pontos/' + req.query.cep,
 		headers: {
-			'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnBlZ2FraS5jb20uYnIiLCJhdWQiOiJodHRwczpcL1wvYXBpLnBlZ2FraS5jb20uYnIiLCJzdWIiOiJUc3JsTDN2SlNLNmZLSEhrVmZKRjREUjV2UUN0ZGxiV21jMU4yaFltUjB6VnV1ZGxWN2IzNWouaVZteH5DUWRGcE1UcUFzVUpnTWlnS0dveW1LQjNPZy0tIn0.d-XU1Zi8bsakqUJTLswSJZAdP8wDehVrT2G53DasT8U'
+			'Authorization': token
 		}
 	};
 
