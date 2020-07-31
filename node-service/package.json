@@ -1,0 +1,41 @@
+{
+  "name": "stock-middleware",
+  "version": "1.0.0",
+  "description": "Manager of connections to filemaker server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon .",
+    "lint": "prettier --write \"./**/*.{ts,js,html,scss}\" --use-tabs --prose-wrap=\"never\""
+  },
+  "keywords": [
+    "filemaker",
+    "nodejs"
+  ],
+  "author": "JMTR Technology",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fmrest": "^2.2.1",
+    "gulp": "^4.0.2",
+    "gulp-jasmine": "^4.0.0",
+    "gulp-jshint": "^2.1.0",
+    "is-md5": "0.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "sha3": "^2.0.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  },
+  "prettier": {
+    "useTabs": true,
+    "proseWrap": true,
+    "tabWidth": 4
+  }
+}
